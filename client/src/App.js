@@ -74,7 +74,7 @@ function App() {
           onChange={(event) => {
             setPais(event.target.value);
           }}
-          className="form-control" placeholder="Ingrese la edad" aria-label="Username" aria-describedby="basic-addon1"/>
+          className="form-control" placeholder="Ingrese el nombre del pais" aria-label="Username" aria-describedby="basic-addon1"/>
         </div>
 
         <div className="input-group mb-3">
@@ -83,7 +83,7 @@ function App() {
           onChange={(event) => {
             setCargo(event.target.value);
           }}
-          className="form-control" placeholder="Ingrese la edad" aria-label="Username" aria-describedby="basic-addon1"/>
+          className="form-control" placeholder="Ingrese el cargo" aria-label="Username" aria-describedby="basic-addon1"/>
         </div>
         
         <div className="input-group mb-3">
@@ -92,7 +92,7 @@ function App() {
           onChange={(event) => {
             setAños(event.target.value);
           }}
-          className="form-control" placeholder="Ingrese la edad" aria-label="Username" aria-describedby="basic-addon1"/>
+          className="form-control" placeholder="Ingrese los años de experiencia" aria-label="Username" aria-describedby="basic-addon1"/>
         </div>
       </div>
       <div className="card-footer text-muted" id="botones">
@@ -122,6 +122,12 @@ function App() {
                     <td>{value.pais}</td>
                     <td>{value.cargo}</td>
                     <td>{value.años}</td>
+                    <td>
+                      <div className="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" className="btn btn-info">Edit</button>
+                        <button type="button" className="btn btndanger">Delete</button>
+                      </div>
+                    </td>
                   </tr>
 
           }))
